@@ -1,6 +1,6 @@
 import random
 randnumber = random.randint(1,100)
-# print(randnumber)
+print(randnumber)
 userguess = None
 guesses = 0
 while (userguess !=randnumber):
@@ -8,6 +8,7 @@ while (userguess !=randnumber):
     userguess = input("Enter your guess:")
     try:
         if userguess=="q":
+            print("Exited")
             exit()
         else:
             userguess=int(userguess)
